@@ -11,7 +11,7 @@ namespace SVARD_Shopping
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            /*
             if (Session["Admin"] != null)
             {
 
@@ -27,7 +27,7 @@ namespace SVARD_Shopping
             HttpCookie c1 = Request.Cookies["MyData"];
 
 
-
+            */
 
 
 
@@ -39,7 +39,7 @@ namespace SVARD_Shopping
             {
                 //Response.Redirect("AddProduct.aspx");
               
-               HttpCookie c1 = new HttpCookie("MyData");
+              /* HttpCookie c1 = new HttpCookie("MyData");
                 c1["Id"] = "admin";
                 c1["pass"] = "admin";
                
@@ -47,6 +47,7 @@ namespace SVARD_Shopping
 
                 Session["Admin"] = c1["Id"];
                 Session.Timeout = 1;
+                */
                 Response.Redirect("AddProduct.aspx");
 
 
@@ -54,6 +55,11 @@ namespace SVARD_Shopping
 
 
 
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Index.aspx");
         }
     }
 }

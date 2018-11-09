@@ -9,6 +9,9 @@
         .auto-style1 {
             text-align: center;
         }
+        .auto-style2 {
+            margin-left: 0px;
+        }
     </style>
 </head>
 <body>
@@ -20,16 +23,20 @@
             LOGIN</p>
         <p class="auto-style1">
             <asp:Label ID="Label4" runat="server" Text="Username"></asp:Label>
-            :<asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            &nbsp;&nbsp;&nbsp;
+            :<asp:TextBox ID="TextBox2" runat="server" Height="17px" Width="208px"></asp:TextBox>
         </p>
         <p class="auto-style1">
             <asp:Label ID="Label3" runat="server" Text="Password"></asp:Label>
-            :<asp:TextBox ID="TextBox3" runat="server" TextMode="Password"></asp:TextBox>
+            &nbsp;&nbsp;&nbsp;
+            :<asp:TextBox ID="TextBox3" runat="server" Height="16px" TextMode="Password" Width="209px"></asp:TextBox>
         </p>
         <p class="auto-style1">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
         <p class="auto-style1">
-            <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" OnClientClick="~/AddProduct.aspx" Text="LOG IN" />
+            <asp:Button ID="Button3" runat="server" CssClass="auto-style2" Height="25px" OnClick="Button3_Click" OnClientClick="~/AddProduct.aspx" Text="LOG IN" Width="113px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button4" runat="server" Height="25px" OnClick="Button4_Click" Text="Back" Width="111px" />
         </p>
         <p class="auto-style1">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
